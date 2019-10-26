@@ -1,0 +1,98 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.API", "Blog\Blog.API.csproj", "{A4E4BF57-E2BC-4EE1-9D54-F084D22980C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{91ACE3AA-C3A2-43CF-81D3-9E5E4C5A022D}"
+	ProjectSection(SolutionItems) = preProject
+		Blog\Models\ApplicationUser.cs = Blog\Models\ApplicationUser.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{4EDCE653-0ADC-4D97-82AA-42702E7B060D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{026F953A-A6BE-4BBF-8959-964306EE34B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Models", "Blog.Models\Blog.Models.csproj", "{5106733D-D118-44AA-817A-DD0BEA7C89DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Services", "Blog.Services\Blog.Services.csproj", "{BDF94B32-7B15-4D2A-A0AD-8C3EC217CB37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Services.Interfaces", "Blog.Services.Interfaces\Blog.Services.Interfaces.csproj", "{A651F3C0-F0B2-46A2-8A27-55499630D0F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Repository", "Blog.Repository\Blog.Repository.csproj", "{FC6D69A6-9676-4156-85F1-F0A8446AFB60}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blog.Repository.interface", "Blog.Repository.interface\Blog.Repository.interface.csproj", "{E1708BA2-9B3D-4FFF-9F59-4770E2CFC0B2}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "blog.UI", "blog.UI\", "{73B32ADB-A0B4-4EA5-BBD3-2E4CCCBD4DEF}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_47740"
+		Debug.AspNetCompiler.PhysicalPath = "blog.UI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_47740\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_47740"
+		Release.AspNetCompiler.PhysicalPath = "blog.UI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_47740\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "47740"
+		SlnRelativePath = "blog.UI\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4E4BF57-E2BC-4EE1-9D54-F084D22980C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E4BF57-E2BC-4EE1-9D54-F084D22980C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E4BF57-E2BC-4EE1-9D54-F084D22980C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E4BF57-E2BC-4EE1-9D54-F084D22980C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5106733D-D118-44AA-817A-DD0BEA7C89DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5106733D-D118-44AA-817A-DD0BEA7C89DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5106733D-D118-44AA-817A-DD0BEA7C89DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5106733D-D118-44AA-817A-DD0BEA7C89DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDF94B32-7B15-4D2A-A0AD-8C3EC217CB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDF94B32-7B15-4D2A-A0AD-8C3EC217CB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDF94B32-7B15-4D2A-A0AD-8C3EC217CB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDF94B32-7B15-4D2A-A0AD-8C3EC217CB37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A651F3C0-F0B2-46A2-8A27-55499630D0F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A651F3C0-F0B2-46A2-8A27-55499630D0F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A651F3C0-F0B2-46A2-8A27-55499630D0F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A651F3C0-F0B2-46A2-8A27-55499630D0F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC6D69A6-9676-4156-85F1-F0A8446AFB60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC6D69A6-9676-4156-85F1-F0A8446AFB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC6D69A6-9676-4156-85F1-F0A8446AFB60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC6D69A6-9676-4156-85F1-F0A8446AFB60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1708BA2-9B3D-4FFF-9F59-4770E2CFC0B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1708BA2-9B3D-4FFF-9F59-4770E2CFC0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1708BA2-9B3D-4FFF-9F59-4770E2CFC0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1708BA2-9B3D-4FFF-9F59-4770E2CFC0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73B32ADB-A0B4-4EA5-BBD3-2E4CCCBD4DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B32ADB-A0B4-4EA5-BBD3-2E4CCCBD4DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B32ADB-A0B4-4EA5-BBD3-2E4CCCBD4DEF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B32ADB-A0B4-4EA5-BBD3-2E4CCCBD4DEF}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A4E4BF57-E2BC-4EE1-9D54-F084D22980C0} = {4EDCE653-0ADC-4D97-82AA-42702E7B060D}
+		{5106733D-D118-44AA-817A-DD0BEA7C89DB} = {91ACE3AA-C3A2-43CF-81D3-9E5E4C5A022D}
+		{BDF94B32-7B15-4D2A-A0AD-8C3EC217CB37} = {026F953A-A6BE-4BBF-8959-964306EE34B6}
+		{A651F3C0-F0B2-46A2-8A27-55499630D0F0} = {026F953A-A6BE-4BBF-8959-964306EE34B6}
+		{FC6D69A6-9676-4156-85F1-F0A8446AFB60} = {91ACE3AA-C3A2-43CF-81D3-9E5E4C5A022D}
+		{E1708BA2-9B3D-4FFF-9F59-4770E2CFC0B2} = {91ACE3AA-C3A2-43CF-81D3-9E5E4C5A022D}
+		{73B32ADB-A0B4-4EA5-BBD3-2E4CCCBD4DEF} = {4EDCE653-0ADC-4D97-82AA-42702E7B060D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44B6C1AA-7B77-45F9-9D9F-BA210769CE9E}
+	EndGlobalSection
+EndGlobal

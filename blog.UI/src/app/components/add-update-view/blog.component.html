@@ -1,0 +1,65 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 display-none">
+          <li class="nav-item active">
+              <button class="btn" [routerLink]="['/']">
+                Home
+              </button>
+            </li>
+      </ul>
+  </div>
+</nav>
+<!-- showing all blog posts from logged in user-->
+  <div class="blog">
+    <div class="container">
+      <ul *ngFor="let data of allBlogs;  let i = index">
+        <div class="blog-image">
+          <img src="{{data.metadata.blogImage}}" height=200px width=200px>
+        </div>
+        <h3>{{data.title}}</h3>
+        <p>Author: {{data.metadata.author}}</p>
+        <div class="blog-content">
+            <p [innerHTML]=data.metadata.description></p>  
+            <a class="btn btn-success" [routerLink]="['usersinglepost']" [queryParams]="{post_id: data._id}">Read more...</a>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <br>
+  <h4 class="cntr" *ngIf="!(isDetails || isEdit)">Enter a New Blog Here:</h4>
+  <h4 class="cntr" *ngIf="isEdit">Edit Blog :</h4>
+
+  <div class="container p-t-50">
+    <div class="row">
+      <div class="offset-md-3 col-md-6 form-back">
+        <div class="blog">
+          <form [formGroup]="blogForm" (ngSubmit)="submitForm()" novalidate>
+              <div class="form-group">
+                  <input type=text formControlName="author" class="form-control" placeholder="Enter author">
+              </div>
+            <div class="form-group">
+              <input type=text formControlName="title" class="form-control" placeholder="Enter title">
+            </div>
+            <div class="form-group">
+                <input type=text formControlName="subtitle" class="form-control" placeholder="Enter sub title">
+            </div>
+              
+            <div class="form-group bg">
+              <!-- <textarea formControlName="content" class="form-control" placeholder="Enter body"></textarea> -->
+              <app-ngx-editor [placeholder]="'Enter text here...'" [spellcheck]="true" formControlName="body" style="height: 700px"></app-ngx-editor>
+            </div>
+
+            <div class="form-group">
+              <input type=text formControlName="imageUrl" class="form-control" placeholder="Image URL">
+            </div>
+            <div class="form-group">
+              <button *ngIf="!isDetails" type="submit" class="btn btn-success">Publish</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
